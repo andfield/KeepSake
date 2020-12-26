@@ -3,9 +3,13 @@ import express from 'express'
 import mongoose from 'mongoose'
 import bodyParser from 'body-parser'
 import cors from 'cors'
+import postRoutes from './routes/posts.js'
 
 //Initialize the app with express.
 const App=express()
+
+//Use the all the routs related to posts
+App.use('/posts', postRoutes)
 
 //Basic setup to add modules on server with 30mb cap for json data passed.
 App.use(bodyParser.json({limit: "30mb", extended: true}))
