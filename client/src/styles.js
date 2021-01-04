@@ -3,7 +3,7 @@ import {makeStyles} from '@material-ui/core/styles'
 
 export default makeStyles(() => ({
     container: {
-        backgroundColor: '#E8F1F2',
+        backgroundColor: '0,0,0,0'
     },
     appBar: {
         backgroundColor: '#1f1f1f',
