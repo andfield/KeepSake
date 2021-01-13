@@ -41,6 +41,7 @@ const login=async (req, res) => {
             if (err) {
                 throw err
             }
+            console.log(user)
             if (!user||!user.comparePassword(req.body.password)) {
                 res.status(401).send({message: 'The user does not exist'})
             }

@@ -23,3 +23,5 @@ export const createPost=(post) => async (dispatch) => {
         console.log(error.message)
     }
 }
+
+MODEL.FIND
